@@ -3,6 +3,7 @@
  Bakery and Restaurant Management System.
 
 *About*
+
 An automated system covering,
 
  1. Employee Management.
