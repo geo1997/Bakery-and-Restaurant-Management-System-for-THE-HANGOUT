@@ -874,7 +874,7 @@ public class CostAndAvailability extends javax.swing.JFrame {
         int availability = Integer.parseInt(jTextField6.getText());
         
         
-        if(type.equals("Raw Material")){
+        if("Raw Material".equals(type)){
                try{
                     if(stock.updateStock(sid,total,availability))
                     {

@@ -677,7 +677,7 @@ public void showItemToFields(int index){
 
     private void btnDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelActionPerformed
         // TODO add your handling code here:
-         if(lblMenuID.getText().equals("")){
+         if("".equals(lblMenuID.getText())){
             
             JOptionPane.showMessageDialog(null,"Please Enter ID"); 
         }

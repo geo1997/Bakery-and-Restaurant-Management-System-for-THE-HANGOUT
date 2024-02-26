@@ -585,7 +585,7 @@ public class Report extends javax.swing.JFrame {
             String start = dateFormat.format(jDateChooser4.getDate());
             String end = dateFormat.format(jDateChooser3.getDate());
             
-            if(jComboBox1.getSelectedItem().toString().equals(" ") ){
+            if(" ".equals(jComboBox1.getSelectedItem().toString()) ){
                     JOptionPane.showMessageDialog(rootPane, "Required fileds cannot be empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
             else{

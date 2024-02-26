@@ -896,8 +896,8 @@ public class HallFunc extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Invalid mobile number");
         }
         */
-        if( txtPhone.getText().toString().equals(" ") || txtCustID.getText().toString().equals(" ") || 
-                txtCustName.getText().toString().equals(" ") || txtTime.getText().toString().equals(" ") || txtPackage.getSelectedItem().equals(" ")|| txtMenuID.getSelectedItem().equals(" ")|| txtNoOfPeople.getText().toString().equals( "")|| txtAmount.getText().toString().equals( "")|| txtAdvance.getText().toString().equals( "")|| txtTax.getText().toString().equals( "")||  txtServiceCharge.getText().toString().equals( "")|| txtTotal.getText().toString().equals( "")/*|| jDateChooser2.getDate().toString().equals(" ")*/){
+        if( " ".equals(txtPhone.getText().toString()) || " ".equals(txtCustID.getText().toString()) || 
+                " ".equals(txtCustName.getText().toString()) || " ".equals(txtTime.getText().toString()) || txtPackage.getSelectedItem().equals(" ")|| txtMenuID.getSelectedItem().equals(" ")|| "".equals (txtNoOfPeople.getText().toString())|| "".equals (txtAmount.getText().toString())|| "".equals (txtAdvance.getText().toString())|| "".equals (txtTax.getText().toString())||  "".equals (txtServiceCharge.getText().toString())|| "".equals (txtTotal.getText().toString())/*|| jDateChooser2.getDate().toString().equals(" ")*/){
                 JOptionPane.showMessageDialog(rootPane, "Required fields cannot be empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
         
@@ -1128,7 +1128,7 @@ mouseClick();
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
 
-        if(txtSearch.getText().equals("")) {
+        if("".equals(txtSearch.getText())) {
             tableload();
         }      
     }//GEN-LAST:event_btnSearchActionPerformed

@@ -689,7 +689,7 @@ public class UtilityDetails extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane,"Enter All The Fields","Empty Fields",JOptionPane.ERROR_MESSAGE);
         }
        
-        if(name.trim().equals(""))
+        if("".equals(name.trim()))
         {
             JOptionPane.showMessageDialog(rootPane, " Enter The Name ","Empty Fields ",JOptionPane.ERROR_MESSAGE);
         }
@@ -855,7 +855,7 @@ public class UtilityDetails extends javax.swing.JFrame {
         String arrD = dateFormat.format(jDateChooser1.getDate());
         
         try{
-            if(name.trim().equals(""))
+            if("".equals(name.trim()))
             {
                 JOptionPane.showMessageDialog(rootPane, " Enter The Name ","Empty Fields ",JOptionPane.ERROR_MESSAGE);
             }

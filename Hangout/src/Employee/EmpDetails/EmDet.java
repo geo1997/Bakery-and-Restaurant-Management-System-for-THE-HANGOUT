@@ -1081,7 +1081,7 @@ public class EmDet extends javax.swing.JFrame {
             int rIndex=jTable_Employee.getSelectedRow();
             
             try {
-                if(radioPermanent.isSelected() && jTable_Employee.getValueAt(rIndex, 4).toString().equals("Available"))
+                if(radioPermanent.isSelected() && "Available".equals(jTable_Employee.getValueAt(rIndex, 4).toString()))
                 {
                 updateQuery = "update employee,permanentemp set employee.fname = ? , employee.lname = ?, employee.nic = ? , employee.dob = ?, permanentemp.basicSalary = ? where employee.id = ? and permanentemp.peid = ? ";
                 
@@ -1102,7 +1102,7 @@ public class EmDet extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Data updated successfully");
                 
                 }
-                else if(radioTemporary.isSelected() && jTable_Employee.getValueAt(rIndex, 4).toString().equals("Available"))
+                else if(radioTemporary.isSelected() && "Available".equals(jTable_Employee.getValueAt(rIndex, 4).toString()))
                 {
                     updateQuery = "update employee,tempemployee set employee.fname = ? , employee.lname = ?, employee.nic = ? , employee.dob = ?, otRate = ? where employee.id = ? and tempemployee.teid = ?  ";
                     ps = conn.prepareStatement(updateQuery);
@@ -1273,7 +1273,7 @@ public class EmDet extends javax.swing.JFrame {
              
              if(rs.next()){
               
-                 if(rs.getString("type").equals("Permanent") ||rs.getString("type").equals("permanent")  ){
+                 if("Permanent".equals(rs.getString("type")) ||"permanent".equals(rs.getString("type"))  ){
                      String sqlperm="select e.id,e.fname,e.lname,e.nic,e.dob,e.gender,e.department,e.position,e.type,pe.basicSalary "
                              + "from employee e ,permanentemp pe "
                              + "where e.id=pe.peid and e.id= ?";
@@ -1333,7 +1333,7 @@ public class EmDet extends javax.swing.JFrame {
                     tfBasicSal.setText("");
                       tfOtRate.setText("");
 
-                    if(rs.getString("type").equals("Permanent") || rs.getString("type").equals("permanent")){
+                    if("Permanent".equals(rs.getString("type")) || "permanent".equals(rs.getString("type"))){
                         radioPermanent.setSelected(true);
                          String sal =rs.getString("basicSalary");
                         tfBasicSal.setText(sal);
@@ -1410,7 +1410,7 @@ public class EmDet extends javax.swing.JFrame {
                     tfOtRate.setText("");
                     tfBasicSal.setText("");
 
-                   if(rs.getString("type").equals("Temporary") || rs.getString("type").equals("temporary")){
+                   if("Temporary".equals(rs.getString("type")) || "temporary".equals(rs.getString("type"))){
                         radioTemporary.setSelected(true);
                          String hrate =rs.getString("otRate");
                             tfOtRate.setText(hrate);

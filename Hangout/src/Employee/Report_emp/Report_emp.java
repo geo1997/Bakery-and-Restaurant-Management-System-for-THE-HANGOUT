@@ -819,7 +819,7 @@ public class Report_emp extends javax.swing.JFrame {
              
              
             if(rs.next()){
-                if(rs.getString("type").equals("Permanent")){
+                if("Permanent".equals(rs.getString("type"))){
                     
                     String per="Select e.id,concat(e.fname,' ',e.lname)as Name,e.nic,e.dob,e.type,e.gender,e.department,sum(distinct(basicSalary))as totSal,count(distinct(l.noofleaves))as totL "
                             + "from employee e inner join permanentemp pemp on e.id=pemp.peid inner join leavecount l on pemp.peid=l.eid "

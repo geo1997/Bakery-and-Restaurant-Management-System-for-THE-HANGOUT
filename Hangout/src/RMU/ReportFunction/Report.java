@@ -842,14 +842,14 @@ public class Report extends javax.swing.JFrame {
                 PreparedStatement ps4;
                 ResultSet rs4;
             
-        if(type.equals("Raw Material")){
+        if("Raw Material".equals(type)){
         try {
 //            String itemName = String.valueOf(jTextField11.getText());
 //            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //            String startDate = dateFormat.format(jDateChooser2.getDate());
 //            String endDate = dateFormat.format(jDateChooser1.getDate());
 //            
-            if(jTextField11.getText().toString().equals(" ") ){
+            if(" ".equals(jTextField11.getText().toString()) ){
                     JOptionPane.showMessageDialog(rootPane, "Enter The Name ","Empty Fields ",JOptionPane.ERROR_MESSAGE);
             }
             else{
@@ -928,7 +928,7 @@ public class Report extends javax.swing.JFrame {
 //            String startDate = dateFormat.format(jDateChooser2.getDate());
 //            String endDate = dateFormat.format(jDateChooser1.getDate());
 //            
-            if(jTextField11.getText().toString().equals(" ") ){
+            if(" ".equals(jTextField11.getText().toString()) ){
                     JOptionPane.showMessageDialog(rootPane, "Enter The Name ","Empty Fields ",JOptionPane.ERROR_MESSAGE);
             }
             else{

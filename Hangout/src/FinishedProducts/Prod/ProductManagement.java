@@ -537,7 +537,7 @@ public class ProductManagement extends javax.swing.JFrame {
             //System.out.println(arrivalDate);
             
 
-            if(jTextField2.getText().toString().equals(" ") || jSpinField1.getValue() == 0 /*|| jDateChooser2.getDate().toString().equals(" ")*/){
+            if(" ".equals(jTextField2.getText().toString()) || jSpinField1.getValue() == 0 /*|| jDateChooser2.getDate().toString().equals(" ")*/){
                 JOptionPane.showMessageDialog(rootPane, "Required fileds cannot be empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
 
@@ -676,7 +676,7 @@ public class ProductManagement extends javax.swing.JFrame {
                 //String arrivalDate = dateFormat.format(currentDate);
             String expiryDate = dateFormat.format(jDateChooser2.getDate());
 
-            if(jTextField2.getText().toString().equals(" ") || jSpinField1.getValue() == 0 /*|| jDateChooser2.getDate().toString().equals(" ")*/){
+            if(" ".equals(jTextField2.getText().toString()) || jSpinField1.getValue() == 0 /*|| jDateChooser2.getDate().toString().equals(" ")*/){
                     JOptionPane.showMessageDialog(rootPane, "Required fileds cannot be empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
 

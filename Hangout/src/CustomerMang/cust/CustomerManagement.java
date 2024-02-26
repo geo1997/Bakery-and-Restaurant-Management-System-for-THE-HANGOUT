@@ -654,11 +654,11 @@ public class CustomerManagement extends javax.swing.JFrame {
 
     private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
         // TODO add your handling code here:        
-        if (name.getText().toString().equals("") || 
-                mobile.getText().toString().equals("") || 
-                email.getText().toString().equals("") || 
-                address.getText().toString().equals("")|| 
-                exp.getText().toString().equals("")) {
+        if ("".equals(name.getText().toString()) || 
+                "".equals(mobile.getText().toString()) || 
+                "".equals(email.getText().toString()) || 
+                "".equals(address.getText().toString())|| 
+                "".equals(exp.getText().toString())) {
             
             JOptionPane.showMessageDialog(null, "All Fields are compulsory ....");
             
@@ -770,12 +770,12 @@ public class CustomerManagement extends javax.swing.JFrame {
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
         // TODO add your handling code here:
-             if (CusID.getText().toString().equals("") ||name.getText().toString().equals("") ||
-            name.getText().toString().equals("") ||
-            mobile.getText().toString().equals("") ||
-            email.getText().toString().equals("")||
-            address.getText().toString().equals("")||
-            exp.getText().toString().equals("")) {
+             if ("".equals(CusID.getText().toString()) ||"".equals(name.getText().toString()) ||
+            "".equals(name.getText().toString()) ||
+            "".equals(mobile.getText().toString()) ||
+            "".equals(email.getText().toString())||
+            "".equals(address.getText().toString())||
+            "".equals(exp.getText().toString())) {
 
             JOptionPane.showMessageDialog(null, "All Fields are compulsory ....");
 
@@ -823,7 +823,7 @@ public class CustomerManagement extends javax.swing.JFrame {
     
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
         // TODO add your handling code here:
-        if (CusID.getText().equals("")) {
+        if ("".equals(CusID.getText())) {
             JOptionPane.showMessageDialog(null, "Please Enter the order id");
         }else{
             try{

@@ -665,11 +665,11 @@ public class Order extends javax.swing.JFrame {
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
         // TODO add your handling code here:
-                if (phone.getText().toString().equals("") || 
-                cusid.getText().toString().equals("") || 
-                packid.getText().toString().equals("") || 
-                plates.getText().toString().equals("") || 
-                status.getSelectedItem().toString().equals("")) {
+                if ("".equals(phone.getText().toString()) || 
+                "".equals(cusid.getText().toString()) || 
+                "".equals(packid.getText().toString()) || 
+                "".equals(plates.getText().toString()) || 
+                "".equals(status.getSelectedItem().toString())) {
             
             JOptionPane.showMessageDialog(null, "All Fields are compulsory ....");
             
@@ -727,11 +727,11 @@ public class Order extends javax.swing.JFrame {
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
         // TODO add your handling code here:
-        if (catid.getText().toString().equals("") ||phone.getText().toString().equals("") ||
-            packid.getText().toString().equals("") ||
-            plates.getText().toString().equals("") ||
-            cusid.getText().toString().equals("") ||
-            status.getSelectedItem().toString().equals("")) {
+        if ("".equals(catid.getText().toString()) ||"".equals(phone.getText().toString()) ||
+            "".equals(packid.getText().toString()) ||
+            "".equals(plates.getText().toString()) ||
+            "".equals(cusid.getText().toString()) ||
+            "".equals(status.getSelectedItem().toString())) {
 
             JOptionPane.showMessageDialog(null, "All Fields are compulsory ....");
 
@@ -805,7 +805,7 @@ public class Order extends javax.swing.JFrame {
 
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
         // TODO add your handling code here:
-        if (catid.getText().equals("")) {
+        if ("".equals(catid.getText())) {
             JOptionPane.showMessageDialog(null, "Please Enter the order id");
         }else{
             try{

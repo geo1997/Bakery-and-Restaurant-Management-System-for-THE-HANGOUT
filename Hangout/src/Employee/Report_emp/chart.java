@@ -555,7 +555,7 @@ public class chart extends javax.swing.JFrame {
         // create the dataset...
         final DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         
-        if(emptype.equals("Permanent")){
+        if("Permanent".equals(emptype)){
             
              String sql="Select sum(Distinct(pemp.basicSalary))as TotalSal,max(pemp.basicSalary)as HighestSal "
                      + "from employee e,permanentemp pemp where e.id=pemp.peid and "
@@ -579,7 +579,7 @@ public class chart extends javax.swing.JFrame {
               
             
         }else 
-         if(emptype.equals("Temporary")){
+         if("Temporary".equals(emptype)){
              
              String sql="Select sum(Distinct(totalSal))as TotalSal,max(totalSal) as HighestSal from employee e,tempemployee temp where e.id=temp.teid and "
                      + "department='Restaurant and Bakery' "
@@ -601,7 +601,7 @@ public class chart extends javax.swing.JFrame {
              
         }
         
-        if(emptype.equals("Permanent")){
+        if("Permanent".equals(emptype)){
             
              String sql="Select sum(Distinct(pemp.basicSalary))as TotalSal,max(pemp.basicSalary)as HighestSal from employee e,permanentemp pemp where e.id=pemp.peid and "
                      + "department='Raw material & Utility Management' "
@@ -624,7 +624,7 @@ public class chart extends javax.swing.JFrame {
               
             
         }else 
-         if(emptype.equals("Temporary")){
+         if("Temporary".equals(emptype)){
              
              String sql="Select sum(Distinct(totalSal))as TotalSal,max(totalSal) as HighestSal from employee e,tempemployee temp where e.id=temp.teid and "
                      + "department='Raw material & Utility Management' "
@@ -646,7 +646,7 @@ public class chart extends javax.swing.JFrame {
              
         }
         
-        if(emptype.equals("Permanent")){
+        if("Permanent".equals(emptype)){
             
              String sql="Select sum(Distinct(pemp.basicSalary))as TotalSal,max(pemp.basicSalary)as HighestSal from employee e,permanentemp pemp where e.id=pemp.peid and "
                      + "department='Catering & Order book' "
@@ -669,7 +669,7 @@ public class chart extends javax.swing.JFrame {
               
             
         }else 
-         if(emptype.equals("Temporary")){
+         if("Temporary".equals(emptype)){
              
              String sql="Select sum(Distinct(totalSal))as TotalSal,max(totalSal) as HighestSal from employee e,tempemployee temp where e.id=temp.teid and "
                      + "department='Catering & Order book' "
@@ -692,7 +692,7 @@ public class chart extends javax.swing.JFrame {
         }
         
         
-        if(emptype.equals("Permanent")){
+        if("Permanent".equals(emptype)){
             
              String sql="Select sum(Distinct(pemp.basicSalary))as TotalSal,max(pemp.basicSalary)as HighestSal from employee e,permanentemp pemp where e.id=pemp.peid and "
                      + "department='Customer Management' "
@@ -715,7 +715,7 @@ public class chart extends javax.swing.JFrame {
               
             
         }else 
-         if(emptype.equals("Temporary")){
+         if("Temporary".equals(emptype)){
              
              String sql="Select sum(Distinct(totalSal))as TotalSal,max(totalSal) as HighestSal from employee e,tempemployee temp where e.id=temp.teid and "
                      + "department='Customer Management' "
@@ -737,7 +737,7 @@ public class chart extends javax.swing.JFrame {
              
         }
         
-        if(emptype.equals("Permanent")){
+        if("Permanent".equals(emptype)){
             
              String sql="Select sum(Distinct(pemp.basicSalary))as TotalSal,max(pemp.basicSalary)as HighestSal from employee e,permanentemp pemp where e.id=pemp.peid and "
                      + "department='Finished products' "
@@ -760,7 +760,7 @@ public class chart extends javax.swing.JFrame {
               
             
         }else 
-         if(emptype.equals("Temporary")){
+         if("Temporary".equals(emptype)){
              
              String sql="Select sum(Distinct(totalSal))as TotalSal,max(totalSal) as HighestSal from employee e,tempemployee temp where e.id=temp.teid and "
                      + "department='Finished products' "
@@ -782,7 +782,7 @@ public class chart extends javax.swing.JFrame {
              
         }
         
-        if(emptype.equals("Permanent")){
+        if("Permanent".equals(emptype)){
             
              String sql="Select sum(Distinct(pemp.basicSalary))as TotalSal,max(pemp.basicSalary)as HighestSal from employee e,permanentemp pemp where e.id=pemp.peid and "
                      + "department='Function hall' "
@@ -805,7 +805,7 @@ public class chart extends javax.swing.JFrame {
               
             
         }else 
-         if(emptype.equals("Temporary")){
+         if("Temporary".equals(emptype)){
              
              String sql="Select sum(Distinct(totalSal))as TotalSal,max(totalSal) as HighestSal from employee e,tempemployee temp where e.id=temp.teid and "
                      + "department='Function hall' "
@@ -827,7 +827,7 @@ public class chart extends javax.swing.JFrame {
              
         }
        
-        if(emptype.equals("Permanent")){
+        if("Permanent".equals(emptype)){
             
              String sql="Select sum(Distinct(pemp.basicSalary))as TotalSal,max(pemp.basicSalary)as HighestSal from employee e,permanentemp pemp where e.id=pemp.peid and "
                      + "department='HRM' "
@@ -850,7 +850,7 @@ public class chart extends javax.swing.JFrame {
               
             
         }else 
-         if(emptype.equals("Temporary")){
+         if("Temporary".equals(emptype)){
              
              String sql="Select sum(Distinct(totalSal))as TotalSal,max(totalSal) as HighestSal from employee e,tempemployee temp where e.id=temp.teid and "
                      + "department='HRM' "

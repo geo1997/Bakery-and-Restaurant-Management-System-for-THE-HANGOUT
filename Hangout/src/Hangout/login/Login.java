@@ -269,7 +269,7 @@ public class Login extends javax.swing.JFrame {
           String em = tfemail.getText();
           String pw = tfpass.getText();
           
-          if(em.equals("") || pw.equals("")){
+          if("".equals(em) || "".equals(pw)){
               JOptionPane.showMessageDialog(null, "Empty Fields");
           }
         
@@ -309,7 +309,7 @@ public class Login extends javax.swing.JFrame {
                 //String dep=rs.getString("department");
                 rs = ps.executeQuery();
               if(rs.next()){
-                if(rs.getString("department").equals("HRM")){
+                if("HRM".equals(rs.getString("department"))){
                     EmployeeManagement emp = new EmployeeManagement();
                     emp.setVisible(true);
                     this.setVisible(false);
@@ -318,7 +318,7 @@ public class Login extends javax.swing.JFrame {
                     //JOptionPane.showMessageDialog(null, "Login Successful");   
                 }
                  else
-                 if(rs.getString("department").equals("Restaurant and Bakery")){
+                 if("Restaurant and Bakery".equals(rs.getString("department"))){
                          RestaurantBakery rb = new RestaurantBakery();
                          rb.setVisible(true);
                          this.setVisible(false);
@@ -327,7 +327,7 @@ public class Login extends javax.swing.JFrame {
                     //JOptionPane.showMessageDialog(null, "Login Successful");
                          }
                  else
-                     if(rs.getString("department").equals("Raw material & Utility Management")){
+                     if("Raw material & Utility Management".equals(rs.getString("department"))){
                          Welcome w = new Welcome();
                          w.setVisible(true);
                          this.setVisible(false);
@@ -337,7 +337,7 @@ public class Login extends javax.swing.JFrame {
                     //JOptionPane.showMessageDialog(null, "Login Successful");
                      }
                   else
-                  if(rs.getString("department").equals("Catering & Order book")){
+                  if("Catering & Order book".equals(rs.getString("department"))){
                            CateringMenu cm = new CateringMenu();
                            cm.setVisible(true);
                            this.setVisible(false);
@@ -347,7 +347,7 @@ public class Login extends javax.swing.JFrame {
                       
                   }
                   else
-                   if(rs.getString("department").equals("Customer Management")){
+                   if("Customer Management".equals(rs.getString("department"))){
                        CustomerManagementDash cd = new CustomerManagementDash();
                        cd.setVisible(true);
                        this.setVisible(false);
@@ -356,7 +356,7 @@ public class Login extends javax.swing.JFrame {
                     //JOptionPane.showMessageDialog(null, "Login Successful");
                    }
                    else
-                   if(rs.getString("department").equals("Finished products")){
+                   if("Finished products".equals(rs.getString("department"))){
                        ProductDashboard pd = new ProductDashboard();
                        pd.setVisible(true);
                        this.setVisible(false);
@@ -365,7 +365,7 @@ public class Login extends javax.swing.JFrame {
                     //JOptionPane.showMessageDialog(null, "Login Successful");
                    }
                    else
-                   if(rs.getString("department").equals("Function hall")){
+                   if("Function hall".equals(rs.getString("department"))){
                        DashboardBooking db = new DashboardBooking();
                        db.setVisible(true);
                        this.setVisible(false);
@@ -374,7 +374,7 @@ public class Login extends javax.swing.JFrame {
                     //JOptionPane.showMessageDialog(null, "Login Successful");
                    }
                    else
-                    if(rs.getString("department").equals("admin")){
+                    if("admin".equals(rs.getString("department"))){
                         AdminDash ad = new AdminDash();
                         ad.setVisible(true);
                         this.setVisible(false);
