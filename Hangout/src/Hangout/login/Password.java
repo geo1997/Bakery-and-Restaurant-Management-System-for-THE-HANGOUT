@@ -5,6 +5,7 @@
  */
 package Hangout.login;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -43,7 +44,7 @@ public class Password {
                         numbers ;
   
         // Using random method 
-        Random rndm_method = new Random(); 
+        Random rndm_method = new SecureRandom(); 
   
         char[] password = new char[len]; 
   
